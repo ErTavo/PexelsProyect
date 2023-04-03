@@ -1,0 +1,13 @@
+<div class="imagen-container">
+    <div class="row" *ngFor="let row of photos | chunk: 3">
+        <div class="col-4 col-md-3" *ngFor="let photo of row">
+            <img [src]="photo.src.medium" alt="Imagen {{ photo.id }}">
+        </div>
+    </div>
+
+    <div class="imagen-pagination">
+        <button class="btn" [disabled]="page === 1" (click)="prevPage()">Anterior</button>
+        <span class="mx-3">{{ page }} de {{ maxPage }}</span>
+        <button class="btn" [disabled]="page === maxPage" (click)="nextPage()">Siguiente</button>
+    </div>
+</div>

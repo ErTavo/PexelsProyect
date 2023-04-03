@@ -1,0 +1,27 @@
+.imagen-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-col {
+    flex: 0 0 25%;
+    padding: 10px;
+}
+
+.imagen-col img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: gray;
+}
